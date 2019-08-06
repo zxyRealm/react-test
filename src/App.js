@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss'
+import Clock from './views/clock'
+import Jsx from './views/jsx'
+import Click from './views/event'
+import Semantic from './views/semantic'
+import ConditionalAnd from './views/conditional/and'
+import ImgList from './views/list'
+// import HelloWorld from './views/hello-world.js'
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Clock/>
+      {/*<HelloWorld/>*/}
+      <Click/>
+      <Jsx/>
+      <Semantic/>
+      <ConditionalAnd user={{name: 'King Of This Country'}} />
+      <ImgList/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
