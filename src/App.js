@@ -1,23 +1,18 @@
 import React from 'react'
+import 'antd/dist/antd.min.css'
 import './App.scss'
-import Clock from './views/clock'
-import Jsx from './views/jsx'
-import Click from './views/event'
-import Semantic from './views/semantic'
-import ConditionalAnd from './views/conditional/and'
-import ImgList from './views/list'
-// import HelloWorld from './views/hello-world.js'
+import Jsx from './views/2-jsx'
+import Click from './views/5-events'
+import ConditionalAnd from './views/6-conditional'
+import ListKeys from './views/7-list-keys'
 
 function App () {
   return (
     <div className="App">
-      <Clock/>
-      {/*<HelloWorld/>*/}
       <Click/>
       <Jsx/>
-      <Semantic/>
       <ConditionalAnd user={{name: 'King Of This Country'}} />
-      <ImgList/>
+      <ListKeys/>
     </div>
   )
 }
