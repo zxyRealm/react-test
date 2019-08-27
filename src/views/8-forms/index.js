@@ -14,14 +14,17 @@ class Reservation extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.state = {
             going: true,
-            num: 4
+            num: 4,
+            course: ''
         }
 
     }
-    handleSubmit (e) {
+
+    handleSubmit(e) {
         console.log(this.state)
         e.preventDefault()
     }
+
     handleInputChange(e) {
         const target = e.target
         const value = target.type === 'checkbox' ? target.checked : target.value
@@ -48,8 +51,20 @@ class Reservation extends React.Component {
                         name="num"
                         value={this.state.num}
                         onChange={this.handleInputChange}
-                        type="number"/>
+                    />
                 </label>
+                <div>
+                    <select
+                        style={{width: '100px'}}
+                        name="course"
+                        value={this.state.course}
+                        onChange={this.handleInputChange}>
+                        <option value={1}>体育</option>
+                        <option value={2}>美术</option>
+                        <option value={3}>自然</option>
+                    </select>
+                </div>
+
                 <input type="submit" value="提交"/>
             </form>
         )

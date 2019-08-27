@@ -6,7 +6,7 @@ const scaleNames = {
 };
 
 function  BoilingVerdict(props) {
-    const isBoil = props.celsius
+    const isBoil = props.celsius > 100
     if (isBoil) {
         return <p> The water would boil.</p>
     } else {
@@ -17,6 +17,7 @@ function  BoilingVerdict(props) {
 class Calculator extends React.Component {
     constructor(props) {
         super(props)
+        this.handleChange = this.handleChange.bind(this)
         this.state = {
             temperature: ''
         }
@@ -32,7 +33,6 @@ class Calculator extends React.Component {
                 <input
                     value={temperature}
                     onChange={this.handleChange}/>
-
                 <BoilingVerdict
                     celsius={parseFloat(temperature)}/>
             </fieldset>

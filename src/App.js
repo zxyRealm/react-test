@@ -11,6 +11,7 @@ import ConditionalAnd from './views/6-conditional'
 import ListKeys from './views/7-list-keys'
 import Forms from './views/8-forms'
 import StateUp from './views/9-state-up'
+import StateUp2 from './views/9-state-up/stateUp'
 import Composition from './views/10-composition'
 
 
@@ -33,10 +34,12 @@ function App() {
             {/*<State/>*/}
             {/*<Stateuse price={5}/>*/}
             {/*<Components author={comment.author} text={comment.text} date={comment.date}/>*/}
-            <Events/>
+            {/*<Events/>*/}
             {/*<ConditionalAnd user={{name: 'King Of This Country'}} />*/}
-            <ListKeys/>
+            {/*<ListKeys/>*/}
             <Forms/>
+            <StateUp/>
+            {/*<StateUp2/>*/}
         </div>
     )
 }
