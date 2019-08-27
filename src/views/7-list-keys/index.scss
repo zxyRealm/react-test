@@ -1,11 +1,13 @@
 img{
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .img__list{
-  padding: 0 20px;
+  padding: 10px 20px;
   text-align: left;
   li {
+    display: inline-block;
+    margin-left: 10px;
     margin-bottom: 15px;
   }
 }
