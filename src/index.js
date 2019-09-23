@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 //     const ele = (
 //         <div>
 //             <h1>hello world</h1>
-//             <h2>It is {new Date().toLocaleTimeString()}</h2>
+  //             <h2>It is {new Date().toLocaleTimeString()}</h2>
 //         </div>
 //     )
 //     ReactDOM.render(ele, document.getElementById('root'))

@@ -1,6 +1,8 @@
 import React from 'react'
 import 'antd/dist/antd.min.css'
 import './App.scss'
+import MainContent from './views/layout'
+
 import Jsx from './views/2-jsx'
 import Props from './views/3-props'
 import Components from './views/3-props/UserInfo'
@@ -14,9 +16,6 @@ import StateUp from './views/9-state-up'
 import StateUp2 from './views/9-state-up/stateUp'
 import Composition from './views/10-composition'
 
-
-
-
 function App() {
     let comment = {
         author: {
@@ -29,6 +28,7 @@ function App() {
 
     return (
         <div className="App">
+            <MainContent/>
             {/*<Jsx/>*/}
             {/*<Props name="Tom"/>*/}
             {/*<State/>*/}
@@ -37,8 +37,8 @@ function App() {
             {/*<Events/>*/}
             {/*<ConditionalAnd user={{name: 'King Of This Country'}} />*/}
             {/*<ListKeys/>*/}
-            <Forms/>
-            <StateUp/>
+            {/*<Forms/>*/}
+            {/*<StateUp/>*/}
             {/*<StateUp2/>*/}
         </div>
     )

@@ -60,11 +60,11 @@ class WarningText extends React.Component {
 }
 
 class And extends React.Component {
-    constructor() {
-        super()
-        this.state({
+    constructor(props) {
+        super(props)
+        this.state = {
             isLoggedIn: false
-        })
+        }   
     }
 
     basicText(user) {
@@ -86,7 +86,7 @@ class And extends React.Component {
             element = <GuestGreet/>
         }
         // 三目运算符
-        element = isLoggedIn ? <UserGreet/> : <GuestGreet/>
+        // element = isLoggedIn ? <UserGreet/> : <GuestGreet/>
         return (
             <div>
                 <WarningText warn={false}/>
